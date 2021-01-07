@@ -75,6 +75,7 @@ namespace Study
                 }
                 else
                 {
+                
                     Thread.Sleep(200);
                     Console.WriteLine();
                 }
