@@ -44,7 +44,8 @@ namespace Study
 
             for (int i = 0; i < students; i++)
             {
-
+                name[i] = name[i].ToLower();
+                name[i] = name[i].Substring(0, 1).ToUpper() + name[i].Substring(1, name[i].Length - 1);
                 Console.WriteLine($"Имя: {name[i]}");
                 Console.WriteLine($"Возраст: {age[i]}");
                 if (name.Length <= 5)
